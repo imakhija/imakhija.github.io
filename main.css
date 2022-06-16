@@ -76,28 +76,28 @@ p {
     border-radius:10px;
 }
 
-/* .sm {
+ .sm {
     background-color: var(--navyblue);
     border-radius:10px;
-}
+ }
 
-.sm:hover {
+ .sm:hover {
     transition:0.25s;
     background-color: var(--hoverblue);
-}
+ }
 
-.sm:hover svg {
+ .sm:hover svg {
     fill: var(--white);
     top:-5px;
-} */
+ }
 
-/* svg {
+ svg {
     transition:0.25s;
     fill: var(--lightblue);
     position:relative;
     top:0px;
     width:64px;
-} */
+ }
 
 .copyright {
     font-size:14px;
