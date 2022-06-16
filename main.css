@@ -139,14 +139,12 @@ svg {
         width:50px;
     }
     
-    .sm:hover svg {
-        fill: var(--white);
-        top:0px;
+    .sm:hover {
+        transition:0s;
     }
 
-    .lsm:hover svg {
-        fill: var(--white);
-        top:0px;
+    .lsm:hover {
+        transition:0s;
     }
 }
 
