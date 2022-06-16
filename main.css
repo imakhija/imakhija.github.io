@@ -76,7 +76,7 @@ p {
     border-radius:10px;
 }
 
-.sm {
+/* .sm {
     background-color: var(--navyblue);
     border-radius:10px;
 }
@@ -89,7 +89,7 @@ p {
 .sm:hover svg {
     fill: var(--white);
     top:-5px;
-}
+} */
 
 svg {
     transition:0.25s;
@@ -127,10 +127,6 @@ svg {
     
     svg {
         width:50px;
-    }
-    
-    .sm {
-        pointer-events:none;
     }
 }
 
