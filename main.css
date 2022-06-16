@@ -91,16 +91,6 @@ p {
     top:-5px;
 }
 
-.lsm:hover {
-    transition:0.25s;
-    background-color: var(--hoverblue);
-}
-
-.lsm:hover svg {
-    fill: var(--white);
-    top:-3px;
-}
-
 svg {
     transition:0.25s;
     fill: var(--lightblue);
@@ -137,6 +127,10 @@ svg {
     
     svg {
         width:50px;
+    }
+    
+    .sm {
+        pointer-events:none;
     }
 }
 
