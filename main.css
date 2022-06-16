@@ -138,6 +138,16 @@ svg {
     svg {
         width:50px;
     }
+    
+    .sm:hover svg {
+        fill: var(--white);
+        top:0px;
+    }
+
+    .lsm:hover svg {
+        fill: var(--white);
+        top:0px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
