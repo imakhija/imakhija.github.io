@@ -134,6 +134,10 @@ svg {
     .socials {
         width:25%;
     }
+    
+    svg {
+        width:50px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
