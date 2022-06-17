@@ -31,13 +31,9 @@
                     <li class="nav-item">
                         <a class="nav-link expand" href="/"><b>portfolio</b></a>
                     </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link expand">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-sun" viewBox="0 0 16 16">
-                                <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
-                            </svg>
-                        </a>
-                    </li> -->
+                    <li class="nav-item" onclick="change()">
+                        <a class="nav-link expand" id="mode"><b>light mode</b></a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -50,7 +46,7 @@
             </div>
             <div class="col-lg-9 col-sm-12">
                 <h1><b>Hi there! 👋🏽</b></h1>
-                <p class="text-white">My name's <span id="name">Ishaan</span> and I'm an incoming freshman at the University of Maryland. I'll be majoring in computer science with a specialization in machine learning and a minor in statistics 👨🏽‍💻</p>
+                <p>My name's <span id="name">Ishaan</span> and I'm an incoming freshman at the University of Maryland. I'll be majoring in computer science with a specialization in machine learning and a minor in statistics 👨🏽‍💻</p>
             </div>
         </div>
         <div class="card mt-sm-1 mt-lg-3">
@@ -147,5 +143,18 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script> document.getElementById("year").innerHTML = new Date().getFullYear(); </script>
+    <script>
+        function change() {
+            if(document.documentElement.getAttribute("data-theme") === "light") {
+                document.documentElement.setAttribute('data-theme', "dark");
+                document.getElementById("mode").innerHTML = "light mode";
+            }
+            else {
+                document.documentElement.setAttribute('data-theme', "light");
+                document.getElementById("mode").innerHTML = "dark mode";
+            }
+            document.getElementById("mode").style.fontWeight = "bold";
+        }
+    </script>
    </body>
 </html>
