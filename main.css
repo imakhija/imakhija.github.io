@@ -1,5 +1,5 @@
 /* dark mode color theme */
-:root {
+:root, html[data-theme='dark'] {
     --darkblue: #0b2545;
     --lightblue: #8da9c4;
     --navyblue: #13315c;
@@ -9,9 +9,17 @@
 }
 
 /* light mode color theme */
-
+html[data-theme='light'] {
+    --darkblue: #eef4ed;
+    --lightblue: #13315c;
+    --navyblue: #8da9c4;
+    --hoverblue: #8da9c4;
+    --white: #0b2545;
+    --black: #000;
+}
 
 /* document styling */
+
 body {
     background-color: var(--darkblue);
     color: var(--white);
@@ -19,16 +27,19 @@ body {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    transition:0.5s;
 }
 
 img {
     -webkit-user-drag: none;
+    transition:0.5s;
 }
 
 #brand {
     font-size:18px;
     color: var(--white) !important;
     font-weight:bold;
+    transition:0.5s;
 }
 
 #brand:hover {
@@ -60,24 +71,29 @@ a:hover {
     border-radius:50%;
     width:100%;
     border:6px solid var(--white);
+    transition:0.5s;
 }
 
 h1 {
     font-size:128px;
+    transition:0.25s;
 }
 
 h5 {
     font-size:24px;
+    transition:0.25s;
 }
 
 p {
     font-size:32px;
+    transition:0.25s;
 }
 
 .card {
     background-color: var(--navyblue);
     padding:10px;
     border-radius:10px;
+    border-color: var(--navyblue);
 }
 
 .sm {
