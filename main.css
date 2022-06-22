@@ -79,6 +79,24 @@ h1 {
     transition:0.25s;
 }
 
+h2 {
+    color: var(--white);
+    font-size:32px;
+    transition:0.25s;
+}
+
+h3 {
+    font-size:42px;
+    transition:0.25s;
+    font-weight:bold;
+}
+
+h4 {
+    font-size:18px;
+    color: var(--lightblue);
+    transition:0.25s;
+}
+
 h5 {
     font-size:24px;
     transition:0.25s;
@@ -124,6 +142,73 @@ svg {
     font-weight:bold;
 }
 
+.accordion-item {
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    background-color: var(--navyblue);
+    border-color: var(--navyblue);
+    transition:0.5s;
+}
+
+.accordion-button {
+    background-color: var(--navyblue) !important;
+    color: var(--white) !important;
+    fill: var(--white);
+    transition:0.5s;
+}
+
+.accordion-button:after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+    margin-right:25px;
+}
+
+h5 {
+    color: var(--white);
+}
+
+.tabs {
+    color: var(--lightblue);
+    border-radius:30px !important;
+    height:100%;
+    width:110%;
+    transition:0.25s;
+    font-weight:bold;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    background-color: var(--navyblue);
+}
+
+.tabs:hover {
+    color: var(--white);
+}
+
+.box {
+    width:100%;
+    margin-left:50%;
+    transform:translateX(-50%);
+    overflow-x:scroll;
+    overflow-y:hidden;
+    flex-wrap:nowrap;
+}
+
+.box::-webkit-scrollbar {
+    display: none;
+}
+
+.logos {
+    width:60%;
+    margin-left:50%;
+    transform: translateX(-50%);   
+}
+
+.logos2 {
+    height:90px;
+    margin-left:50%;
+    transform: translateX(-50%); 
+}
+
 @media only screen and (max-width: 1400px) {
     h1 {
         font-size:100px;
@@ -145,6 +230,18 @@ svg {
         transform: translateX(-50%);
     }
 
+    .logos {
+        width:80%; 
+    }
+
+    h3 {
+        font-size:28px;
+    }
+
+    h4 {
+        font-size:13px;
+    }
+
     .socials {
         width:25%;
     }
@@ -155,6 +252,10 @@ svg {
 
     h5 {
         font-size:16px;
+    }
+
+    h2 {
+        font-size:24px;
     }
 }
 
@@ -171,6 +272,14 @@ svg {
         font-size:22px;
     }
 
+    h2 {
+        font-size:18px;
+    }
+
+    .logos {
+        width:35%;
+    }
+
     .socials {
         width:50%;
     }
@@ -184,6 +293,10 @@ svg {
 
     h5 {
         font-size:14px;
+    }
+
+    h3 {
+        font-size:22px;
     }
 
     p {
