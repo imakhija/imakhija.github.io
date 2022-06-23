@@ -316,3 +316,7 @@ h5 {
         font-size:10px;
     }
 }
+
+.nav-pills .nav-link:focus {
+    outline: none;
+}
