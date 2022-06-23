@@ -209,6 +209,11 @@ h5 {
     transform: translateX(-50%); 
 }
 
+.badge {
+    background-color: var(--lightblue)!important;
+    color: var(--darkblue)!important;
+}
+
 @media only screen and (max-width: 1400px) {
     h1 {
         font-size:100px;
