@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio | Ishaan Makhija</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/325/man-technologist-medium-skin-tone_1f468-1f3fd-200d-1f4bb.png">
+    <link href="https://imakhija.me/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg mx-sm-4 mt-sm-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" id="brand" href="/">ishaan makhija</a>
+            <button class="navbar-toggler shadow-none border-0 m-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#8da9c4" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link expand" aria-current="page" href="/"><b>home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link expand" href="/"><b>about</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link expand" href="https://imakhija.me/resume.pdf" target="_blank"><b>resume</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link expand" href="/"><b>portfolio</b></a>
+                    </li>
+                    <li class="nav-item" onclick="change()">
+                        <a class="nav-link expand" id="mode"><b>light mode</b></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-sm-5 mt-3" id="main">
+        <ul class="nav nav-pills mb-3 box" id="pills-tab" role="tablist">
+            <li class="nav-item tabs2" role="presentation">
+                <button class="nav-link active tabs" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-web" type="button" role="tab" aria-controls="pills-home" aria-selected="true">web&nbsp;development</button>
+            </li>
+            <li class="nav-item mx-4" role="presentation">
+                <button class="nav-link tabs" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-oop" type="button" role="tab" aria-controls="pills-profile" aria-selected="false" style="white-space:nowrap;">object-oriented</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link tabs" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-swft" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">swift</button>
+            </li>
+            <li class="nav-item mx-4" role="presentation">
+                <button class="nav-link tabs" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-ml" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">machine&nbsp;learning</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link tabs" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-ai" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">artifical&nbsp;intelligence</button>
+            </li>
+            <li class="nav-item mx-4" role="presentation">
+                <button class="nav-link tabs" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-ds" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">data&nbsp;science</button>
+            </li>
+            <!-- <li class="nav-item" role="presentation">
+                <button class="nav-link tabs" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-api" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">APIs</button>
+            </li> -->
+        </ul>
+        <div class="tab-content my-3 my-sm-4" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-web" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                <ul class="nav nav-pills mb-3 box" id="pills-tab" role="tablist">
+                    <li class="nav-item tabs2" role="presentation">
+                        <button class="nav-link active tabs" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-hs1" type="button" role="tab" aria-controls="pills-home" aria-selected="true">high school</button>
+                    </li>
+                    <li class="nav-item mx-4" role="presentation">
+                        <button class="nav-link tabs" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-cg1" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">college</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link tabs" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-pg1" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">post-grad</button>
+                    </li>
+                </ul>
+                <div class="tab-content my-3 my-sm-4" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-hs1" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                        <div class="row d-flex justify-content-center">
+                            <div class="card col-md col-11">
+                                <div class="card-body">
+                                    <h5>Website Resume</h5>
+                                    <h4>Build this personal resume in the form of a website to showcase my past, current, and future computer science projects</h4>
+                                    <h4 class="mb-3"><a href="https://imakhija.me" target="_blank"><i>imakhija.me</i></a></h4>
+                                    <span class="badge rounded-pill text-bg-primary"><b>HTML</b></span>
+                                    <span class="badge rounded-pill text-bg-primary mx-1"><b>CSS</b></span>
+                                    <span class="badge rounded-pill text-bg-primary"><b>Javascript</b></span>
+                                </div>
+                            </div>
+                            <div class="card mt-md-0 mt-3 col-md col-11 mx-md-4">
+                                <div class="card-body">
+                                    <h5>Hills Valley Coalition</h5>
+                                    <h4>Collaborated with another developer to revamp a community-based nonprofit organization's informational website to raise awareness against bullying and addiction</h4>
+                                    <h4 class="mb-3"><a href="https://hillsvalleycoalition.org" target="_blank"><i>hillsvalleycoalititon.org</i></a></h4>
+                                    <span class="badge rounded-pill text-bg-primary"><b>HTML</b></span>
+                                    <span class="badge rounded-pill text-bg-primary mx-1"><b>CSS</b></span>
+                                    <span class="badge rounded-pill text-bg-primary"><b>Wordpress</b></span>
+                                </div>
+                            </div>
+                            <div class="card mt-md-0 mt-3 col-md col-11">
+                                <div class="card-body">
+                                    <h5>Norwood Industrial Park</h5>
+                                    <h4>Independently developed a new website for the client’s local family-owned real estate consultant company</h4>
+                                    <h4 class="mb-3"><a href="http://norwoodindustrialpark.com/" target="_blank"><i>norwoodindustrialpark.com</i></a></h4>
+                                    <span class="badge rounded-pill text-bg-primary"><b>HTML</b></span>
+                                    <span class="badge rounded-pill text-bg-primary mx-1"><b>CSS</b></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-md-4 mt-3 d-flex justify-content-center">
+                            <div class="card col-md col-11">
+                                <div class="card-body">
+                                    <h5>Ready, Set, Speak!</h5>
+                                    <h4>Helped improve a web-based initiative to improve the communication skills of those with autism or apraxia with expansion of language offerings and regional availability</h4>
+                                    <h4 class="mb-3"><a href="https://readysetspeak.org/en/" target="_blank"><i>readysetspeak.org</i></a></h4>
+                                    <span class="badge rounded-pill text-bg-primary"><b>HTML</b></span>
+                                    <span class="badge rounded-pill text-bg-primary mx-1"><b>CSS</b></span>
+                                    <span class="badge rounded-pill text-bg-primary"><b>Javascript</b></span>
+                                </div>
+                            </div>
+                            <div class="card mt-md-0 mt-3 col-md col-11 mx-md-4" style="margin-right:0!important;">
+                                <div class="card-body">
+                                    <h5>FRC Team 1676</h5>
+                                    <h4>Helped develop an informational website for FRC Team 1676 - The Pascack Pi-oneers</h4>
+                                    <h4 class="mb-3"><a href="https://team1676.com/" target="_blank"><i>team1676.com</i></a></h4>
+                                    <span class="badge rounded-pill text-bg-primary"><b>HTML</b></span>
+                                    <span class="badge rounded-pill text-bg-primary mx-1"><b>CSS</b></span>
+                                    <span class="badge rounded-pill text-bg-primary"><b>Javascript</b></span>
+                                    <span class="badge rounded-pill text-bg-primary mx-1"><b>Wordpress</b></span>
+                                </div>
+                            </div>
+                            <div class="card mt-md-0 mt-3 col-md col-11 d-none">
+                                <div class="card-body">
+                                    <h5></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-cg1" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                        <div class="card mt-sm-4 mt-3">
+                            <div class="card-body">
+                                <h3 class="text-center my-5">No Projects Yet</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-pg1" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                        <div class="card mt-sm-4 mt-3">
+                            <div class="card-body">
+                                <h3 class="text-center my-5">No Projects Yet</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-oop" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                <ul class="nav nav-pills mb-3 box" id="pills-tab" role="tablist">
+                    <li class="nav-item tabs2" role="presentation">
+                        <button class="nav-link active tabs" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-hs2" type="button" role="tab" aria-controls="pills-home" aria-selected="true">high school</button>
+                    </li>
+                    <li class="nav-item mx-4" role="presentation">
+                        <button class="nav-link tabs" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-cg2" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">college</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link tabs" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-pg2" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">post-grad</button>
+                    </li>
+                </ul>
+                <div class="tab-content my-3 my-sm-4" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-hs2" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                        <div class="row d-flex justify-content-center">
+                            <div class="card col-md col-11">
+                                <div class="card-body">
+                                    <h5>Career Day Scheduler</h5>
+                                    <h4 class="mb-3">Helped write a program that sorted over 800 students into their preferred seminars for career day in accordance with their top choices and an assortment of other factors including room size and satisfaction</h4>
+                                    <span class="badge rounded-pill text-bg-primary"><b>Java</b></span>
+                                </div>
+                            </div>
+                            <div class="card mt-md-0 mt-3 col-md col-11 mx-md-4" style="margin-right:0!important;">
+                                <div class="card-body">
+                                    <h5>Simon Says</h5>
+                                    <h4 class="mb-3">Used an Arduino kit to recreate this popular game with 4 LED lights, a joystick, and a buzzer on a breadboard</h4>
+                                    <span class="badge rounded-pill text-bg-primary"><b>C++</b></span>
+                                </div>
+                            </div>
+                            <div class="card mt-md-0 mt-3 col-md col-11 d-none">
+                                <div class="card-body">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-md-4 mt-3 d-flex justify-content-center">
+                            <div class="card col-md col-11">
+                                <div class="card-body">
+                                    <h5>Space Invaders</h5>
+                                    <h4 class="mb-3">Recreated this popular game, similar to Galaga, in Eclipse</h4>
+                                    <span class="badge rounded-pill text-bg-primary"><b>Java</b></span>
+                                </div>
+                            </div>
+                            <div class="card mt-md-0 mt-3 col-md col-11 mx-md-4">
+                                <div class="card-body">
+                                    <h5>Text Twist</h5>
+                                    <h4 class="mb-3">Recreated this popular game, similar to Word Cookies, in Eclipse</h4>
+                                    <span class="badge rounded-pill text-bg-primary"><b>Java</b></span>
+                                </div>
+                            </div>
+                            <div class="card mt-md-0 mt-3 col-md col-11">
+                                <div class="card-body">
+                                    <h5>Pong</h5>
+                                    <h4 class="mb-3">Recreated this popular game, similar to Brick Breaker, in Eclipse</h4>
+                                    <span class="badge rounded-pill text-bg-primary"><b>Java</b></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-cg2" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                        <div class="card mt-sm-4 mt-3">
+                            <div class="card-body">
+                                <h3 class="text-center my-5">No Projects Yet</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-pg2" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                        <div class="card mt-sm-4 mt-3">
+                            <div class="card-body">
+                                <h3 class="text-center my-5">No Projects Yet</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-swft" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                <ul class="nav nav-pills mb-3 box" id="pills-tab" role="tablist">
+                    <li class="nav-item tabs2" role="presentation">
+                        <button class="nav-link active tabs" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-hs6" type="button" role="tab" aria-controls="pills-home" aria-selected="true">high school</button>
+                    </li>
+                    <li class="nav-item mx-4" role="presentation">
+                        <button class="nav-link tabs" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-cg6" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">college</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link tabs" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-pg6" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">post-grad</button>
+                    </li>
+                </ul>
+                <div class="tab-content my-3 my-sm-4" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-hs6" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                        <div class="row d-flex justify-content-center">
+                            <div class="card col-md col-11">
+                                <div class="card-body">
+                                    <h5>Flappy Bird</h5>
+                                    <h4 class="mb-3">Recreated this popular game in Xcode</h4>
+                                    <span class="badge rounded-pill text-bg-primary"><b>Swift</b></span>
+                                </div>
+                            </div>
+                            <div class="card mt-md-0 mt-3 col-md col-11 mx-md-4" style="margin-right:0!important;">
+                                <div class="card-body">
+                                    <h5>Color360</h5>
+                                    <h4 class="mb-3">Created an RGB color generator app with hexadecimal translation capabilities as an introductory project</h4>
+                                    <span class="badge rounded-pill text-bg-primary"><b>Swift</b></span>
+                                </div>
+                            </div>
+                            <div class="card mt-md-0 mt-3 col-md col-11 d-none">
+                                <div class="card-body">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-cg6" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                        <div class="card mt-sm-4 mt-3">
+                            <div class="card-body">
+                                <h3 class="text-center my-5">No Projects Yet</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-pg6" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                        <div class="card mt-sm-4 mt-3">
+                            <div class="card-body">
+                                <h3 class="text-center my-5">No Projects Yet</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-ml" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                <ul class="nav nav-pills mb-3 box" id="pills-tab" role="tablist">
+                    <li class="nav-item tabs2" role="presentation">
+                        <button class="nav-link active tabs" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-hs3" type="button" role="tab" aria-controls="pills-home" aria-selected="true">high school</button>
+                    </li>
+                    <li class="nav-item mx-4" role="presentation">
+                        <button class="nav-link tabs" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-cg3" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">college</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link tabs" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-pg3" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">post-grad</button>
+                    </li>
+                </ul>
+                <div class="tab-content my-3 my-sm-4" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-hs3" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                        <div class="card mt-sm-4 mt-3">
+                            <div class="card-body">
+                                <h3 class="text-center my-5">No Projects Found</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-cg3" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                        <div class="card mt-sm-4 mt-3">
+                            <div class="card-body">
+                                <h3 class="text-center my-5">No Projects Yet</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-pg3" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                        <div class="card mt-sm-4 mt-3">
+                            <div class="card-body">
+                                <h3 class="text-center my-5">No Projects Yet</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-ai" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                <ul class="nav nav-pills mb-3 box" id="pills-tab" role="tablist">
+                    <li class="nav-item tabs2" role="presentation">
+                        <button class="nav-link active tabs" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-hs4" type="button" role="tab" aria-controls="pills-home" aria-selected="true">high school</button>
+                    </li>
+                    <li class="nav-item mx-4" role="presentation">
+                        <button class="nav-link tabs" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-cg4" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">college</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link tabs" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-pg4" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">post-grad</button>
+                    </li>
+                </ul>
+                <div class="tab-content my-3 my-sm-4" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-hs4" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                        <div class="card mt-sm-4 mt-3">
+                            <div class="card-body">
+                                <h3 class="text-center my-5">No Projects Found</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-cg4" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                        <div class="card mt-sm-4 mt-3">
+                            <div class="card-body">
+                                <h3 class="text-center my-5">No Projects Yet</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-pg4" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                        <div class="card mt-sm-4 mt-3">
+                            <div class="card-body">
+                                <h3 class="text-center my-5">No Projects Yet</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-ds" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                <ul class="nav nav-pills mb-3 box" id="pills-tab" role="tablist">
+                    <li class="nav-item tabs2" role="presentation">
+                        <button class="nav-link active tabs" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-hs5" type="button" role="tab" aria-controls="pills-home" aria-selected="true">high school</button>
+                    </li>
+                    <li class="nav-item mx-4" role="presentation">
+                        <button class="nav-link tabs" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-cg5" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">college</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link tabs" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-pg5" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">post-grad</button>
+                    </li>
+                </ul>
+                <div class="tab-content my-3 my-sm-4" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-hs5" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                        <div class="row d-flex justify-content-center">
+                            <div class="card col-md col-11">
+                                <div class="card-body">
+                                    <h5>FRC Scouting</h5>
+                                    <h4>Developed a website that allowed robotics team members to fill in a form with match data that went into a database and was processed with statistics to create analytics that helped coaches decide which teams to form alliances with at competitions</h4>
+                                    <h4 class="mb-3"><a href="https://team1676.com/apps/scouting" target="_blank"><i>scouting.team1676.com</i></a></h4>
+                                    <span class="badge rounded-pill text-bg-primary"><b>HTML</b></span>
+                                    <span class="badge rounded-pill text-bg-primary mx-1"><b>CSS</b></span>
+                                    <span class="badge rounded-pill text-bg-primary"><b>Javascript</b></span>
+                                    <span class="badge rounded-pill text-bg-primary mx-1"><b>PHP</b></span>
+                                    <span class="badge rounded-pill text-bg-primary"><b>MySQL</b></span>
+                                </div>
+                            </div>
+                            <div class="card mt-md-0 mt-3 col-md col-11 mx-md-4" style="margin-right:0!important;">
+                                <div class="card-body">
+                                    <h5>Career Day</h5>
+                                    <h4>Developed a website that collected students' form responses with their preferred speakers for career day in a database and used a CSV of finalized schedules to send out individual emails</h4>
+                                    <h4 class="mb-3"><a href="https://team1676.com/careerday" target="_blank"><i>careerday.tk</i></a></h4>
+                                    <span class="badge rounded-pill text-bg-primary"><b>HTML</b></span>
+                                    <span class="badge rounded-pill text-bg-primary mx-1"><b>CSS</b></span>
+                                    <span class="badge rounded-pill text-bg-primary"><b>Javascript</b></span>
+                                    <span class="badge rounded-pill text-bg-primary mx-1"><b>PHP</b></span>
+                                    <span class="badge rounded-pill text-bg-primary"><b>MySQL</b></span>
+                                </div>
+                            </div>
+                            <div class="card mt-md-0 mt-3 col-md col-11 d-none">
+                                <div class="card-body">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-cg5" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                        <div class="card mt-sm-4 mt-3">
+                            <div class="card-body">
+                                <h3 class="text-center my-5">No Projects Yet</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-pg5" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                        <div class="card mt-sm-4 mt-3">
+                            <div class="card-body">
+                                <h3 class="text-center my-5">No Projects Yet</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="tab-pane fade" id="pills-api" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                <ul class="nav nav-pills mb-3 box" id="pills-tab" role="tablist">
+                    <li class="nav-item tabs2" role="presentation">
+                        <button class="nav-link active tabs" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-hs7" type="button" role="tab" aria-controls="pills-home" aria-selected="true">high school</button>
+                    </li>
+                    <li class="nav-item mx-4" role="presentation">
+                        <button class="nav-link tabs" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-cg7" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">college</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link tabs" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-pg7" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">post-grad</button>
+                    </li>
+                </ul>
+                <div class="tab-content my-3 my-sm-4" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-hs7" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                        <div class="row d-flex justify-content-center">
+                            <div class="card col-md col-11">
+                                <div class="card-body">
+                                    
+                                </div>
+                            </div>
+                            <div class="card mt-md-0 mt-3 col-md col-11 mx-md-4">
+                                <div class="card-body">
+                                    
+                                </div>
+                            </div>
+                            <div class="card mt-md-0 mt-3 col-md col-11">
+                                <div class="card-body">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-cg7" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                        <div class="card mt-sm-4 mt-3">
+                            <div class="card-body">
+                                <h3 class="text-center my-5">No Projects Yet</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-pg7" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                        <div class="card mt-sm-4 mt-3">
+                            <div class="card-body">
+                                <h3 class="text-center my-5">No Projects Yet</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        
+        <div id="footer" class="mt-4">
+            <h6 class="text-center copyright mb-4">copyright &copy; <span id="year"></span> | powered by <a class="btm" href="https://github.com/" target="_blank">github</a> and <a class="btm" href="https://getbootstrap.com/" target="_blank">bootstrap</a> | v1.0.0</h6>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script> document.getElementById("year").innerHTML = new Date().getFullYear(); </script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+    <script>
+        function change() {
+            if(document.documentElement.getAttribute("data-theme") === "light") {
+                document.documentElement.setAttribute('data-theme', "dark");
+                document.getElementById("mode").innerHTML = "light mode";
+            }
+            else {
+                document.documentElement.setAttribute('data-theme', "light");
+                document.getElementById("mode").innerHTML = "dark mode";
+            }
+            document.getElementById("mode").style.fontWeight = "bold";
+        }
+    </script>
+
+    <style>
+        h5 {
+            font-weight:bold;
+        }
+    </style>
+   </body>
+</html>
