@@ -8,7 +8,7 @@
     <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/325/man-technologist-medium-skin-tone_1f468-1f3fd-200d-1f4bb.png">
     <link href="https://imakhija.me/main.css" rel="stylesheet">
   </head>
-  <body>
+  <body onload="setMode()">
     <nav class="navbar navbar-expand-lg mx-sm-4 mt-sm-3">
         <div class="container-fluid">
             <a class="navbar-brand" id="brand" href="/">ishaan makhija</a>
@@ -144,14 +144,46 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script> document.getElementById("year").innerHTML = new Date().getFullYear(); </script>
     <script>
-        function change() {
-            if(document.documentElement.getAttribute("data-theme") === "light") {
+        function setMode() {
+            if(localStorage.getItem("theme") == "dark") {
                 document.documentElement.setAttribute('data-theme', "dark");
                 document.getElementById("mode").innerHTML = "light mode";
+                localStorage.setItem("theme", "dark");
+                console.log("3");
             }
             else {
                 document.documentElement.setAttribute('data-theme', "light");
                 document.getElementById("mode").innerHTML = "dark mode";
+                localStorage.setItem("theme", "light");
+                console.log("4");
+            }
+            document.getElementById("mode").style.fontWeight = "bold";
+        }
+
+        function change() {
+            if(localStorage.getItem("theme") === null) {
+                if(document.documentElement.getAttribute("data-theme") === "light") {
+                    document.documentElement.setAttribute('data-theme', "dark");
+                    document.getElementById("mode").innerHTML = "light mode";
+                    localStorage.setItem("theme", "dark");
+                }
+                else {
+                    document.documentElement.setAttribute('data-theme', "light");
+                    document.getElementById("mode").innerHTML = "dark mode";
+                    localStorage.setItem("theme", "light");
+                }
+            }
+            else {
+                if(localStorage.getItem("theme") == "dark") {
+                    document.documentElement.setAttribute('data-theme', "light");
+                    document.getElementById("mode").innerHTML = "dark mode";
+                    localStorage.setItem("theme", "light");
+                }
+                else {
+                    document.documentElement.setAttribute('data-theme', "dark");
+                    document.getElementById("mode").innerHTML = "light mode";
+                    localStorage.setItem("theme", "dark");
+                }
             }
             document.getElementById("mode").style.fontWeight = "bold";
         }
