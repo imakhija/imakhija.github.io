@@ -19,8 +19,10 @@ html[data-theme='light'] {
 }
 
 /* document styling */
-
 body {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
     background-color: var(--darkblue);
     color: var(--white);
     -webkit-user-select: none;        
@@ -63,9 +65,9 @@ a:hover {
     margin-right:15px;
 }
 
-.expand:hover {
+/* .expand:hover {
     margin-right:20px;
-}
+} */
 
 #profile-picture {
     border-radius:50%;
