@@ -54,6 +54,7 @@ window.onload = function() {
         document.body.style.visibility = 'visible';
         document.body.style.opacity = '1';
         document.getElementById("year").innerHTML = new Date().getFullYear();
+        setMode();
     })
     .catch(err => {
         console.log('Error loading navbar or footer:', err);
