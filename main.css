@@ -22,7 +22,7 @@ html[data-theme='light'] {
 body {
     visibility: hidden;
     opacity: 0;
-    transition: opacity 0.25s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
     background-color: var(--darkblue);
     color: var(--white);
     -webkit-user-select: none;        
@@ -51,7 +51,7 @@ img {
 a {
     color: var(--lightblue) !important;
     text-decoration:none !important;
-    transition:0.25s !important;
+    transition:0.3s !important;
 }
 
 a:hover {
@@ -74,40 +74,36 @@ a:hover {
     border-radius:50%;
     width:100%;
     border:6px solid var(--white);
-    transition:0.5s;
+    transition:0.3s;
 }
 
 h1 {
     font-size:100px;
-    transition:0.25s;
 }
 
 h2 {
     color: var(--white);
     font-size:32px;
-    transition:0.25s;
 }
 
 h3 {
     font-size:42px;
-    transition:0.25s;
     font-weight:bold;
 }
 
 h4 {
     font-size:18px;
     color: var(--lightblue);
-    transition:0.25s;
 }
 
 h5 {
     font-size:24px;
-    transition:0.25s;
+    color: var(--white);
+    transition:0.3s;
 }
 
 p {
     font-size:32px;
-    transition:0.25s;
 }
 
 .card {
@@ -115,6 +111,7 @@ p {
     padding:7.5px;
     border-radius:10px;
     border-color: var(--navyblue);
+    transition:0.3s;
 }
 
 .sm {
@@ -165,10 +162,6 @@ svg {
     margin-right:25px;
 }
 
-h5 {
-    color: var(--white);
-}
-
 .tabs {
     color: var(--lightblue);
     border-radius:30px !important;
@@ -216,6 +209,12 @@ h5 {
     color: var(--darkblue)!important;
 }
 
+@media only screen and (max-width: 2560px) {
+    .collapse-dark-margin {
+        margin-top:0.30rem !important;
+    }
+}
+
 @media only screen and (max-width: 1400px) {
     h1 {
         font-size:84px;
@@ -227,6 +226,10 @@ h5 {
 
     p {
         font-size:26px;
+    }
+
+    .collapse-dark-margin {
+        margin-top:0.25rem !important;
     }
 }
 
@@ -268,6 +271,14 @@ h5 {
     h2 {
         font-size:24px;
     }
+
+    .collapse-dark-margin {
+        margin-top:0rem;
+    }
+
+    #brand {
+        margin-top:0.25rem !important;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -293,6 +304,14 @@ h5 {
 
     .socials {
         width:50%;
+    }
+
+    .collapse-dark-margin {
+        margin-top:0rem;
+    }
+
+    #brand {
+        margin-top:0.25rem !important;
     }
 }
 
@@ -320,6 +339,14 @@ h5 {
 
     .copyright {
         font-size:10px;
+    }
+
+    .collapse-dark-margin {
+        margin-top:0rem;
+    }
+
+    #brand {
+        margin-top:0.2rem !important;
     }
 }
 
