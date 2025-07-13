@@ -353,3 +353,19 @@ svg {
 .nav-pills .nav-link:focus {
     outline: none;
 }
+
+.about-section-title {
+    font-size: clamp(1.25rem, 2vw, 1.5rem);
+}
+
+.about-card {
+    background-color: var(--navyblue);
+}
+
+.about-title {
+    font-size: clamp(0.8rem, 1vw, 1rem);
+}
+
+.about-role, .about-date {
+    font-size: clamp(0.65rem, 1vw, 0.8rem);
+}
