@@ -29,7 +29,7 @@ body {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    transition:0.5s;
+    transition:0.75s;
 }
 
 img {
@@ -66,7 +66,7 @@ a:hover {
 
 .main-link.active, .collapse-link.active {
     color: var(--white) !important;
-    text-decoration: solid underline var(--white) 0.15rem !important;
+    text-decoration: solid underline var(--white) !important;
     text-underline-offset: 0.45rem;
 }
 
@@ -123,21 +123,20 @@ p {
 }
 
 .sm:hover {
-    transition:0.25s;
+    transition:0.3s;
     background-color: var(--hoverblue);
 }
 
 .sm:hover svg {
     fill: var(--white);
-    /* top:-5px; */
+    transform: translateY(-3px);
 }
 
 svg {
-    transition:0.25s;
+    transition:0.3s;
     fill: var(--lightblue);
-    position:relative;
-    top:0px;
     width:64px;
+    transform: translateY(0);
 }
 
 .copyright {
@@ -253,9 +252,13 @@ h5 {
     .socials {
         width:25%;
     }
+    
+    .soc {
+        width:54px;
+    }
 
     svg {
-        width:50px;
+        width:42px;
     }
 
     h5 {

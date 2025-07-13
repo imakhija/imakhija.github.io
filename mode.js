@@ -62,3 +62,11 @@ window.onload = function() {
         console.log('Error loading navbar or footer:', err);
     });
 };
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => link.blur());
+    });
+  
+    document.addEventListener("touchstart", function () {}, true);
+});
