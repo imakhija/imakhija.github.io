@@ -37,6 +37,16 @@ window.onload = function() {
     .then(response => response.text())
     .then(navbarData => {
         document.getElementById('navbar').innerHTML = navbarData;
+
+        const path = window.location.pathname.split('/').pop();
+        const page = path.split('.')[0];
+
+        document.querySelectorAll('[data-page]').forEach(link => {
+            if (link.dataset.page === page) {
+                link.classList.add('active');
+            }
+        });
+
         return fetch('footer.html');
     })
     .then(response => response.text())
