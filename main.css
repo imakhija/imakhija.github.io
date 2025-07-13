@@ -41,11 +41,11 @@ img {
     font-size:18px;
     color: var(--white) !important;
     font-weight:bold;
-    transition:0.5s;
 }
 
 #brand:hover {
-    padding:0;
+    padding-left:0px;
+    padding-right:0px;
 }
 
 a {
@@ -111,7 +111,7 @@ p {
 
 .card {
     background-color: var(--navyblue);
-    padding:10px;
+    padding:7.5px;
     border-radius:10px;
     border-color: var(--navyblue);
 }
@@ -128,7 +128,7 @@ p {
 
 .sm:hover svg {
     fill: var(--white);
-    top:-5px;
+    /* top:-5px; */
 }
 
 svg {
@@ -268,7 +268,7 @@ h5 {
 
 @media only screen and (max-width: 768px) {
     h1 {
-        font-size:72px;
+        font-size:70px;
     }
 
     h5 {
