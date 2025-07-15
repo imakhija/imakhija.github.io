@@ -122,6 +122,7 @@ p {
 .sm:hover {
     transition:0.3s;
     background-color: var(--hoverblue);
+    border-color: var(--hoverblue);
 }
 
 .sm:hover svg {
