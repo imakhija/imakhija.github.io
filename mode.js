@@ -70,3 +70,14 @@ document.addEventListener("DOMContentLoaded", function () {
   
     document.addEventListener("touchstart", function () {}, true);
 });
+
+document.querySelectorAll('[data-bs-toggle="pill"]').forEach(function(tab) {
+    tab.addEventListener('shown.bs.tab', function() {
+        setTimeout(function() {
+            document.querySelectorAll('[data-masonry]').forEach(function(grid) {
+                var msnry = Masonry.data(grid);
+                if (msnry) msnry.layout();
+            });
+        }, 10);
+    });
+});
