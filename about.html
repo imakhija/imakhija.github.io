@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨🏽‍💻</text></svg>">
     <link href="./main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   </head>
 
   <body onload="setMode()" class="container d-flex flex-column min-vh-100">
@@ -148,10 +149,12 @@
         <section class="mb-4 mb-lg-5">
           <h5 class="about-section-title mb-3">\ skills</h5>
 
-          <div class="row mb-2 gx-2">
+          <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 gx-2 gy-2">
+            <!-- Languages -->
             <div class="col">
-              <div class="about-card px-4 py-3 rounded">
+              <div class="about-card px-4 py-3 rounded d-flex align-items-center justify-content-between">
                 <div class="about-title fw-semibold">Python</div>
+                <i class="skill-icon fab fa-python ms-2 fs-5"></i>
               </div>
             </div>
             <div class="col">
@@ -160,26 +163,29 @@
               </div>
             </div>
             <div class="col">
-              <div class="about-card px-4 py-3 rounded">
+              <div class="about-card px-4 py-3 rounded d-flex align-items-center justify-content-between">
                 <div class="about-title fw-semibold">Java</div>
+                <i class="skill-icon fab fa-java ms-2 fs-5"></i>
               </div>
             </div>
-          </div>
-
-          <div class="row mb-2 gx-2">
+        
+            <!-- Web & Databases -->
             <div class="col">
-              <div class="about-card px-4 py-3 rounded">
+              <div class="about-card px-4 py-3 rounded d-flex align-items-center justify-content-between">
                 <div class="about-title fw-semibold">HTML</div>
+                <i class="skill-icon fab fa-html5 ms-2 fs-5"></i>
               </div>
             </div>
             <div class="col">
-              <div class="about-card px-4 py-3 rounded">
+              <div class="about-card px-4 py-3 rounded d-flex align-items-center justify-content-between">
                 <div class="about-title fw-semibold">CSS</div>
+                <i class="skill-icon fab fa-css3-alt ms-2 fs-5"></i>
               </div>
             </div>
             <div class="col">
-              <div class="about-card px-4 py-3 rounded">
+              <div class="about-card px-4 py-3 rounded d-flex align-items-center justify-content-between">
                 <div class="about-title fw-semibold">JavaScript</div>
+                <i class="skill-icon fab fa-square-js ms-2 fs-5"></i>
               </div>
             </div>
             <div class="col">
@@ -187,35 +193,31 @@
                 <div class="about-title fw-semibold">SQL</div>
               </div>
             </div>
-          </div>
-
-          <div class="row mb-2 gx-2">
+        
+            <!-- Frameworks & Libraries -->
             <div class="col">
-              <div class="about-card px-4 py-3 rounded">
+              <div class="about-card px-4 py-3 rounded d-flex align-items-center justify-content-between">
                 <div class="about-title fw-semibold">Bootstrap</div>
+                <i class="skill-icon fa-brands fa-bootstrap ms-2 fs-5"></i>
               </div>
             </div>
             <div class="col">
               <div class="about-card px-4 py-3 rounded">
-                <div class="about-title fw-semibold">React</div>
+                <div class="about-title fw-semibold">FastAPI</div>
               </div>
             </div>
+        
+            <!-- Tools & Platforms -->
             <div class="col">
-              <div class="about-card px-4 py-3 rounded">
-                <div class="about-title fw-semibold">Django</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row mb-2 gx-2">
-            <div class="col">
-              <div class="about-card px-4 py-3 rounded">
+              <div class="about-card px-4 py-3 rounded d-flex align-items-center justify-content-between">
                 <div class="about-title fw-semibold">AWS</div>
+                <i class="skill-icon fa-brands fa-aws ms-2 fs-5"></i>
               </div>
             </div>
             <div class="col">
-              <div class="about-card px-4 py-3 rounded">
+              <div class="about-card px-4 py-3 rounded d-flex align-items-center justify-content-between">
                 <div class="about-title fw-semibold">Git</div>
+                <i class="skill-icon fa-brands fa-git-alt ms-2 fs-5"></i>
               </div>
             </div>
             <div class="col">
@@ -224,16 +226,16 @@
               </div>
             </div>
             <div class="col">
-              <div class="about-card px-4 py-3 rounded">
+              <div class="about-card px-4 py-3 rounded d-flex align-items-center justify-content-between">
                 <div class="about-title fw-semibold">Docker</div>
+                <i class="skill-icon fa-brands fa-docker ms-2 fs-5"></i>
               </div>
             </div>
-          </div>
-
-          <div class="row mb-2 gx-2">
+        
+            <!-- Misc -->
             <div class="col">
               <div class="about-card px-4 py-3 rounded">
-                <div class="about-title fw-semibold">Swagger</div>
+                <div class="about-title fw-semibold">Visual Studio Code</div>
               </div>
             </div>
             <div class="col">
