@@ -151,6 +151,7 @@ svg {
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
     background-color: var(--navyblue);
+    color: var(--white);
 }
 
 .tabs:hover {
@@ -188,8 +189,10 @@ svg {
 }
 
 .badge {
+    /* background-color: var(--navyblue)!important;
+    color: var(--lightblue)!important; */
     background-color: var(--navyblue)!important;
-    color: var(--lightblue)!important;
+    color: var(--white)!important;
     transition: 0.3s ease-in-out;
     padding:7.5px;
     font-weight: normal;
