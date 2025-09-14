@@ -1,0 +1,76 @@
+body {
+    font-family: "Times New Roman", serif;
+    background: #422e51;
+    margin: 0;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.composite-wrapper {
+    border: 3px solid white;
+    padding: 2rem;
+    width: 99%;
+    background: #422e51;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    gap: 1rem;
+}
+
+.member {
+    text-align: center;
+    width: 150px;
+}
+
+.member img {
+    width: 130px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid white;
+    padding: 2px;
+}
+
+/* Name */
+.member p:first-of-type {
+    font-family: 'Inter';
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin: 0.4rem 0 0.1rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Position */
+.member p:last-of-type {
+    font-family: 'Inter';
+    font-size: 0.55rem;
+    font-weight: 400;
+    margin: 0;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.centerpiece {
+text-align: center;
+margin: 3rem 2rem;
+}
+
+.centerpiece img {
+width: 75px;
+}
+
+.title {
+    font-family: 'UnifrakturMaguntia';
+    text-align: center;
+}
