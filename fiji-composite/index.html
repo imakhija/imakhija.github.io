@@ -10,121 +10,254 @@
         <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
         <link href="./style.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     </head>
 
     <body>
-        <div class="composite-wrapper">
-
-            <!-- Exec (top row) -->
-            <div class="row">
-            <div class="member">
-                <img src="https://www.solidbackgrounds.com/images/950x350/950x350-gray-solid-color-background.jpg">
-                <p>DECLAN ACOSTA</p>
-                <p>HISTORIAN</p>
-            </div>
-            <div class="member">
-                <img src="https://www.solidbackgrounds.com/images/950x350/950x350-gray-solid-color-background.jpg">
-                <p>GUSTAVO REGO</p>
-                <p>RECORDING SECRETARY</p>
-            </div>
-            <div class="member">
-                <img src="https://www.solidbackgrounds.com/images/950x350/950x350-gray-solid-color-background.jpg">
-                <p>AIDAN MCNULTY</p>
-                <p>PRESIDENT</p>
-            </div>
-            <div class="member">
-                <img src="https://www.solidbackgrounds.com/images/950x350/950x350-gray-solid-color-background.jpg">
-                <p>BEN LOSEY</p>
-                <p>TREASURER</p>
-            </div>
-            <div class="member">
-                <img src="https://www.solidbackgrounds.com/images/950x350/950x350-gray-solid-color-background.jpg">
-                <p>NOLAN BRENNAN</p>
-                <p>CORRESPONDING SECRETARY</p>
-            </div>
-            </div>
-
-            <!-- Center row with centerpiece -->
-            <div class="row">
-                <div class="row">
-                    <div class="member">
-                        <img src="photos/headshot2.png">
-                        <p>ISHAAN MAKHIJA</p>
-                        <p></p>
-                    </div>
-                    <div class="member">
-                        <img src="https://www.solidbackgrounds.com/images/950x350/950x350-gray-solid-color-background.jpg">
-                        <p>ENOCH OLUWABORO</p>
-                        <p></p>
-                    </div>
-                    <div class="member">
-                        <img src="https://www.solidbackgrounds.com/images/950x350/950x350-gray-solid-color-background.jpg">
-                        <p>JAY JOHANSON</p>
-                        <p></p>
-                    </div>
-                </div>
-
-                <div class="centerpiece">
-                    <h1 class="title">Phi Gamma Delta</h1>
-                    <p class="title">Phi Deuteron Chapter</p>
+        
+        <div class="row row-cols-1 row-cols-md-5 g-4 p-4" data-masonry="{percentPosition: true}">
             
-                    <div class="row">
-                        <h2 class="title">2025</h2>
-                        <img src="https://upload.wikimedia.org/wikipedia/en/3/37/Phi_Gamma_Delta_Crest.png">
-                        <h2 class="title">2026</h2>
-                    </div>
-            
-                    <h2 class="title">University of Maryland</h2>
+            <div class="col member">
+                <div class="card border-0 rounded-0 bg-transparent" data-member="declan" data-hometown="Silver Spring, MD" data-major="Biology">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLvhqO-EXy2Yq-Ue1hUKJXNgzaLZGozvK4KA&s">
+                    <p class="name">DECLAN ACOSTA</p>
+                    <p class="role">HISTORIAN</p>
                 </div>
-
-                <div class="row">
-                    <div class="member">
-                        <img src="https://www.solidbackgrounds.com/images/950x350/950x350-gray-solid-color-background.jpg">
-                        <p>DYLAN HOEFER</p>
-                        <p></p>
-                    </div>
-                    <div class="member">
-                        <img src="https://www.solidbackgrounds.com/images/950x350/950x350-gray-solid-color-background.jpg">
-                        <p>TYLER LUK</p>
-                        <p></p>
-                    </div>
-                    <div class="member">
-                        <img src="https://www.solidbackgrounds.com/images/950x350/950x350-gray-solid-color-background.jpg">
-                        <p>NICK CUVIELLO</p>
-                        <p></p>
-                    </div>
+            </div>
+            <div class="col member">
+                <div class="card border-0 rounded-0 bg-transparent">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLvhqO-EXy2Yq-Ue1hUKJXNgzaLZGozvK4KA&s">
+                    <p>GUSTAVO REGO</p>
+                    <p>RECORDING SECRETARY</p>
                 </div>
             </div>
 
-            <!-- Bottom Row -->
-            <div class="row">
-                <div class="member">
-                    <img src="https://www.solidbackgrounds.com/images/950x350/950x350-gray-solid-color-background.jpg">
+            <div class="col member">
+                <div class="card border-0 rounded-0 bg-transparent">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLvhqO-EXy2Yq-Ue1hUKJXNgzaLZGozvK4KA&s">
+                    <p>AIDAN MCNULTY</p>
+                    <p>PRESIDENT</p>
+                </div>
+            </div>
+
+            <div class="col member">
+                <div class="card border-0 rounded-0 bg-transparent">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLvhqO-EXy2Yq-Ue1hUKJXNgzaLZGozvK4KA&s">
+                    <p>BEN LOSEY</p>
+                    <p>TREASURER</p>
+                </div>
+            </div>
+            <div class="col member">
+                <div class="card border-0 rounded-0 bg-transparent">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLvhqO-EXy2Yq-Ue1hUKJXNgzaLZGozvK4KA&s">
+                    <p>NOLAN BRENNAN</p>
+                    <p>CORRESPONDING SECRETARY</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4 p-4 align-items-center">
+            <div class="col-md-2 member">
+                <div class="card border-0 rounded-0 bg-transparent" data-member="ishaan" data-hometown="Montvale, NJ" data-major="Computer Science">
+                    <img src="photos/headshot2.png">
+                    <p class="name">ISHAAN MAKHIJA</p>
+                    <p class="role"></p>
+                </div>
+            </div>
+
+            <div class="col-md-2 member">
+                <div class="card border-0 rounded-0 bg-transparent">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLvhqO-EXy2Yq-Ue1hUKJXNgzaLZGozvK4KA&s">
+                    <p>ENOCH OLUWABORO</p>
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card border-0 rounded-0 bg-transparent">
+                    <div class="centerpiece">
+                        <h1 class="title">Phi Gamma Delta</h1>
+                        <p class="title">Phi Deuteron Chapter</p>
+                
+                        <div class="row justify-content-center align-items-center my-3">
+                            <div class="col-4">
+                                <h2 class="title">2025</h2>
+                            </div>
+                            <div class="col-4">
+                                <img src="https://upload.wikimedia.org/wikipedia/en/3/37/Phi_Gamma_Delta_Crest.png">
+                            </div>
+                            <div class="col-4">
+                                <h2 class="title">2026</h2>
+                            </div>
+                        </div>
+                
+                        <h2 class="title">University of Maryland</h2>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-2 member">
+                <div class="card border-0 rounded-0 bg-transparent">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLvhqO-EXy2Yq-Ue1hUKJXNgzaLZGozvK4KA&s">
+                    <p>JAY JOHANSON</p>
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="col-md-2 member">
+                <div class="card border-0 rounded-0 bg-transparent">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLvhqO-EXy2Yq-Ue1hUKJXNgzaLZGozvK4KA&s">
+                    <p>DYLAN HOEFER</p>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-6 g-4 p-4" data-masonry="{percentPosition: true}">
+            
+            <div class="col member">
+                <div class="card border-0 rounded-0 bg-transparent">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLvhqO-EXy2Yq-Ue1hUKJXNgzaLZGozvK4KA&s">
+                    <p>TYLER LUK</p>
+                    <p></p>
+                </div>
+            </div>
+            <div class="col member">
+                <div class="card border-0 rounded-0 bg-transparent">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLvhqO-EXy2Yq-Ue1hUKJXNgzaLZGozvK4KA&s">
+                    <p>NICK CUVIELLO</p>
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="col member">
+                <div class="card border-0 rounded-0 bg-transparent">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLvhqO-EXy2Yq-Ue1hUKJXNgzaLZGozvK4KA&s">
                     <p>COLIN PURCELL</p>
                     <p></p>
                 </div>
-                <div class="member">
-                    <img src="https://www.solidbackgrounds.com/images/950x350/950x350-gray-solid-color-background.jpg">
+            </div>
+
+            <div class="col member">
+                <div class="card border-0 rounded-0 bg-transparent">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLvhqO-EXy2Yq-Ue1hUKJXNgzaLZGozvK4KA&s">
                     <p>JEFF KARPELSON</p>
                     <p></p>
                 </div>
-                <div class="member">
-                    <img src="https://www.solidbackgrounds.com/images/950x350/950x350-gray-solid-color-background.jpg">
-                    <p>ADRIAN BONILLA</p>
-                    <p></p>
-                </div>
-                <div class="member">
-                    <img src="https://www.solidbackgrounds.com/images/950x350/950x350-gray-solid-color-background.jpg">
+            </div>
+            <div class="col member">
+                <div class="card border-0 rounded-0 bg-transparent">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLvhqO-EXy2Yq-Ue1hUKJXNgzaLZGozvK4KA&s">
                     <p>NICHOLAS KHIL</p>
                     <p></p>
                 </div>
-                <div class="member">
-                    <img src="https://www.solidbackgrounds.com/images/950x350/950x350-gray-solid-color-background.jpg">
+            </div>
+            <div class="col member">
+                <div class="card border-0 rounded-0 bg-transparent">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLvhqO-EXy2Yq-Ue1hUKJXNgzaLZGozvK4KA&s">
+                    <p>ADRIAN BONILLA</p>
+                    <p></p>
+                </div>
+            </div>
+            <div class="col member">
+                <div class="card border-0 rounded-0 bg-transparent">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLvhqO-EXy2Yq-Ue1hUKJXNgzaLZGozvK4KA&s">
                     <p>JEREMY BLOOM</p>
                     <p></p>
                 </div>
             </div>
-
+            <div class="col member">
+                <div class="card border-0 rounded-0 bg-transparent">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLvhqO-EXy2Yq-Ue1hUKJXNgzaLZGozvK4KA&s">
+                    <p>BRENNAN KOSIOROWSKI</p>
+                    <p></p>
+                </div>
+            </div>
+            <div class="col member">
+                <div class="card border-0 rounded-0 bg-transparent">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLvhqO-EXy2Yq-Ue1hUKJXNgzaLZGozvK4KA&s">
+                    <p>DANIEL LY</p>
+                    <p></p>
+                </div>
+            </div>
+            <div class="col member">
+                <div class="card border-0 rounded-0 bg-transparent">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLvhqO-EXy2Yq-Ue1hUKJXNgzaLZGozvK4KA&s">
+                    <p>ETHAN ROSENBERG</p>
+                    <p></p>
+                </div>
+            </div>
+            <div class="col member">
+                <div class="card border-0 rounded-0 bg-transparent">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLvhqO-EXy2Yq-Ue1hUKJXNgzaLZGozvK4KA&s">
+                    <p>LUKE NELSON</p>
+                    <p></p>
+                </div>
+            </div>
+            <div class="col member">
+                <div class="card border-0 rounded-0 bg-transparent">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLvhqO-EXy2Yq-Ue1hUKJXNgzaLZGozvK4KA&s">
+                    <p>NICK PIERORAZIO</p>
+                    <p></p>
+                </div>
+            </div>
+            <div class="col member">
+                <div class="card border-0 rounded-0 bg-transparent">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLvhqO-EXy2Yq-Ue1hUKJXNgzaLZGozvK4KA&s">
+                    <p>RAMI SHAWWA</p>
+                    <p></p>
+                </div>
+            </div>
         </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+
+        <script>
+            const modalContainer = document.createElement("div");
+            document.body.appendChild(modalContainer);
+
+            document.querySelectorAll(".card[data-member]").forEach((card) => {
+                const id = card.dataset.member;
+                const name = card.querySelector(".name")?.textContent.trim() || "Unknown";
+                const role = card.querySelector(".role")?.textContent.trim() || "";
+                const hometown = card.dataset.hometown || "N/A";
+                const major = card.dataset.major || "N/A";
+                const image = card.querySelector("img")?.src || "";
+
+                const modalHTML = `
+                <div class="modal fade" id="modal-${id}" tabindex="-1" aria-labelledby="modal-${id}-label" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content border-0 rounded-4">
+                        <div class="modal-header border-bottom-0">
+                            <div>
+                                <h5 class="modal-title mb-0" id="modal-${id}-label"><b>${name}</b></h5>
+                                <h6 class="modal-title text-muted" id="modal-${id}-role">${role}</h6>
+                            </div>
+                            <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                            ></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <img src="${image}" class="img-fluid rounded-circle mb-3" alt="${name}" style="width:50%; height: auto;"/>
+                            <p class="mb-1"><strong>Hometown:</strong> ${hometown}</p>
+                            <p><strong>Major:</strong> ${major}</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                `;
+
+                modalContainer.insertAdjacentHTML("beforeend", modalHTML);
+
+                card.addEventListener("click", () => {
+                    const modal = new bootstrap.Modal(document.getElementById(`modal-${id}`));
+                    modal.show();
+                });
+            });
+        </script>
     </body>
 </html>
