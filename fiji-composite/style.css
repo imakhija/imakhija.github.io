@@ -7,6 +7,7 @@ body {
 
 body.modal-open {
     padding-right: 0 !important;
+    overflow: hidden;
 }
 
 .member {
@@ -68,7 +69,7 @@ body.modal-open {
     z-index: 1000;
     inset: 0;
     /* background: rgba(0,0,0,0.7) !important; */
-    background: rgb(66,46,81,0.9) !important;
+    /* background: rgb(66,46,81,0.9) !important; */
     font-family: 'Inter' !important;
 }
 
