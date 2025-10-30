@@ -2,6 +2,7 @@ body {
     background: #422e51 !important;
     color: white;
     font-family: 'Inter';
+    overflow-x: hidden;
 }
 
 body.modal-open {
@@ -71,7 +72,7 @@ body.modal-open {
 }
 
 .modal-content {
-    background: white;
+    background-color: white !important;
 }
 
 .modal-content img {
@@ -80,7 +81,6 @@ body.modal-open {
     object-fit: cover;
     border-radius: 50%;
     margin-bottom: 10px;
-    border: 2px solid white;
     padding: 3px;
 }
 
