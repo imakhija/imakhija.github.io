@@ -70,7 +70,12 @@ body.modal-open {
     inset: 0;
     /* background: rgba(0,0,0,0.7) !important; */
     /* background: rgb(66,46,81,0.9) !important; */
+    background: rgb(66,46,81,1);
     font-family: 'Inter' !important;
+}
+
+.modal-backdrop.show {
+    opacity: 0 !important;
 }
 
 .modal-content {
