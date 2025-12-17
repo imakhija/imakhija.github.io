@@ -22,7 +22,7 @@ body.modal-open {
 /* Name */
 .member p:first-of-type {
     font-family: 'Inter';
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     font-weight: 700;
     margin: 0.4rem 0 0.1rem;
     text-transform: uppercase;
@@ -35,7 +35,7 @@ body.modal-open {
 /* Position */
 .member p:last-of-type {
     font-family: 'Inter';
-    font-size: 0.55rem;
+    font-size: 0.7rem;
     font-weight: 400;
     margin: 0;
     text-transform: uppercase;
@@ -68,8 +68,6 @@ body.modal-open {
     position: fixed;
     z-index: 1000;
     inset: 0;
-    /* background: rgba(0,0,0,0.7) !important; */
-    /* background: rgb(66,46,81,0.9) !important; */
     background: rgb(66,46,81,1);
     font-family: 'Inter' !important;
 }
